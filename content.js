@@ -21,5 +21,21 @@ for(var i=0; i < description_extras_list.length; i++){
     }
 }
 
-            console.log('---------------');
-            console.log("IS MUSIC "+is_music)
+if(is_music){
+    var play_url = 'https://play.google.com/music/listen?u=0#/sr/';
+    //get video title
+    var title = document.title;
+        title = title.replace("YouTube",'').substring(0, title.indexOf('-'));
+
+        play_url += encodeURI(title);
+
+    //inject link into 
+    var secondary_actions_container = document.getElementById('watch8-secondary-actions');
+
+    var div = document.createElement('div');
+    div.className = 'yt-uix-menu';
+
+    div.innerHTML = '<a href="'+play_url+'" target="_blank">Search in GPlay</a>';
+
+    secondary_actions_container.appendChild(div);
+}
