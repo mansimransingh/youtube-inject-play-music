@@ -35,7 +35,6 @@ if(is_music){
     var div = document.createElement('div');
     div.className = 'yt-uix-menu';
 
-    div.innerHTML = '<a href="'+play_url+'" target="_blank">Search in GPlay</a>';
-
+    div.innerHTML = '<a style="color:black" href="'+play_url+'" target="_blank" class="yt-uix-button yt-uix-button-size-default yt-uix-button-opacity yt-uix-button-has-icon no-icon-markup yt-uix-videoactionmenu-button addto-button  yt-uix-tooltip"  ><span class="yt-uix-button-content">Search on Play Music</span></a>';
     secondary_actions_container.appendChild(div);
 }
