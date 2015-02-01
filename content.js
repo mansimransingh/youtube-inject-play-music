@@ -26,9 +26,9 @@ if(is_music){
     var play_url = 'https://play.google.com/music/listen?u=0#/sr/';
     //get video title
     var title = document.title;
-        title = title.replace("YouTube",'').substring(0, title.indexOf('-'));
+        title = title.replace("YouTube",'');
 
-        play_url += encodeURI(title);
+        play_url += encodeURIComponent(title);
 
     //inject link into 
     var secondary_actions_container = document.getElementById('watch8-secondary-actions');
