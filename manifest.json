@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Link to Google Play Music from Youtube music video",
+    "name": "Search Play Music from Youtube",
     "description": "When watching a music video on Youtube, a link to Google Play Music search is included. Great for All Access customers.",
     "version": "1.0",
     "background":{
