@@ -3,6 +3,14 @@
     "name": "Link to Google Play Music from Youtube music video",
     "description": "When watching a music video on Youtube, a link to Google Play Music search is included. Great for All Access customers.",
     "version": "1.0",
+    "background":{
+        "persistant":true,
+        "page":"background.html"
+    },
+    "permissions": [
+        "tabs",
+        "*://*.youtube.com/*"
+    ],
     "content_scripts": [
         {
             "matches": [
