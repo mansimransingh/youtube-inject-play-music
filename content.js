@@ -45,8 +45,8 @@ var add_link = function(){
 }
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    console.log("SLAVE");
-    console.log('--------------');
+    // console.log("SLAVE TAB");
+    // console.log('--------------');
     // add_link();
     if(loader == null){
         loader = setTimeout(
